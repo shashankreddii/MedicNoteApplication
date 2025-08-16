@@ -1,0 +1,35 @@
+package com.medicnote.backend;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Patient {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private int age;
+    private String gender;
+    private String contact;
+    private String diagnosis;
+    private String lastVisit;
+    private String notes;
+
+    // Getters and setters
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+    public String getGender() { return gender; }
+    public void setGender(String gender) { this.gender = gender; }
+    public String getContact() { return contact; }
+    public void setContact(String contact) { this.contact = contact; }
+    public String getDiagnosis() { return diagnosis; }
+    public void setDiagnosis(String diagnosis) { this.diagnosis = diagnosis; }
+    public String getLastVisit() { return lastVisit; }
+    public void setLastVisit(String lastVisit) { this.lastVisit = lastVisit; }
+    public String getNotes() { return notes; }
+    public void setNotes(String notes) { this.notes = notes; }
+} 
