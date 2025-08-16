@@ -1,0 +1,15 @@
+# ===== Backend (Spring Boot) =====
+target/
+*.log
+*.class
+*.jar
+*.war
+*.iml
+.idea/
+.vscode/
+
+# ===== Frontend (React/Node) =====
+node_modules/
+dist/
+build/
+.env
